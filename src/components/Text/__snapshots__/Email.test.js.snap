@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Email when rendered should match snapshot 1`] = `
+<Text
+  calculation=""
+  colspan="1"
+  confirm={false}
+  confirmationText=""
+  default=""
+  description=""
+  hidden="0"
+  hide_label="0"
+  id="114778861"
+  label="This is an Email"
+  logic={null}
+  maxlength={0}
+  name="this_is_an_email"
+  onChange={null}
+  options=""
+  placeholder=""
+  readonly="0"
+  required="1"
+  sort="2"
+  text_size={50}
+  type="email"
+  uniq="0"
+  value=""
+  workflow_access="write"
+/>
+`;

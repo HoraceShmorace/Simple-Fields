@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text when rendered should match snapshot 1`] = `
+<input
+  aria-required="false"
+  id="115390410"
+  name="115390410"
+  placeholder=""
+  type="text"
+  value=""
+/>
+`;

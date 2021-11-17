@@ -1,0 +1,10 @@
+.root ul {  
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 0;
+  padding-left: 0;
+}
+
+.root ul li:last-child {
+  margin-bottom: 0;
+}

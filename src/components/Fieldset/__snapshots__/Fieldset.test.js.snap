@@ -1,0 +1,471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fieldset when field type is "checkbox" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__checkbox"
+  id="fs-fieldset__select_multiple_things"
+>
+  <legend
+    className="fs-legend"
+  >
+    Select Multiple Things
+  </legend>
+  <CheckboxGroup
+    calculation=""
+    colspan="1"
+    default=""
+    description=""
+    hidden="0"
+    hideLabel={false}
+    hide_label="0"
+    hide_option_button={true}
+    id="115390353"
+    image_dimensions="customDimensions"
+    image_height={100}
+    image_label_alignment="bottom"
+    image_width={100}
+    label="Select Multiple Things"
+    lock_image_ratio={true}
+    lock_image_ratio_option="fitProportionally"
+    logic={null}
+    name="select_multiple_things"
+    option_checkall={0}
+    option_layout="vertical"
+    option_other={0}
+    option_show_values={0}
+    option_store="value"
+    options={
+      Array [
+        Object {
+          "label": "Option1",
+          "value": "Option1",
+        },
+        Object {
+          "label": "Option2",
+          "value": "Option2",
+        },
+        Object {
+          "label": "Option3",
+          "value": "Option3",
+        },
+      ]
+    }
+    randomize_options={0}
+    readonly="0"
+    required="0"
+    sort="8"
+    type="checkbox"
+    uniq="0"
+    use_images={0}
+    value=""
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "email" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__email fs-fieldset--required"
+  id="fs-fieldset__this_is_an_email"
+>
+  <label
+    className="fs-label"
+    htmlFor="114778861"
+  >
+    This is an Email
+  </label>
+  <Email
+    calculation=""
+    colspan="1"
+    confirm={false}
+    confirmationText=""
+    default=""
+    description=""
+    hidden="0"
+    hide_label="0"
+    id="114778861"
+    label="This is an Email"
+    logic={null}
+    maxlength={0}
+    name="this_is_an_email"
+    options=""
+    placeholder=""
+    readonly="0"
+    required="1"
+    sort="2"
+    text_size={50}
+    type="email"
+    uniq="0"
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "name" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__name fs-fieldset--required"
+  id="fs-fieldset__name"
+>
+  <legend
+    className="fs-legend"
+  >
+    Name
+  </legend>
+  <Name
+    calculation=""
+    colspan="2"
+    default=""
+    description=""
+    hidden="0"
+    hide_label="0"
+    id="114778860"
+    label="Name"
+    logic={null}
+    middle_initial_optional={0}
+    middle_name_optional={0}
+    name="name"
+    options=""
+    prefix_optional={0}
+    readonly="0"
+    required="1"
+    show_initial={0}
+    show_middle={0}
+    show_prefix={0}
+    show_suffix={0}
+    sort="1"
+    suffix_optional={0}
+    text_size={20}
+    type="name"
+    uniq="0"
+    visible_subfields={
+      Array [
+        "first",
+        "last",
+      ]
+    }
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "number" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__number"
+  id="fs-fieldset__heres_a_number"
+>
+  <label
+    className="fs-label"
+    htmlFor="115390402"
+  >
+    Here's a Number
+  </label>
+  <Number
+    calculation=""
+    calculation_allow_negatives={0}
+    calculation_category=""
+    calculation_operator=""
+    calculation_type=""
+    calculation_units=""
+    colspan="2"
+    currency=""
+    decimals="0"
+    default=""
+    description=""
+    field_one_calculation={0}
+    field_two_calculation={0}
+    hidden="0"
+    hide_label="0"
+    id="115390402"
+    label="Here's a Number"
+    logic={null}
+    max_value=""
+    min_value=""
+    name="heres_a_number"
+    options=""
+    placeholder=""
+    readonly="0"
+    required="0"
+    slider="0"
+    sort="6"
+    text_size={5}
+    type="number"
+    uniq="0"
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "phone" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__phone"
+  id="fs-fieldset__over_heres_a_phone_number"
+>
+  <label
+    className="fs-label"
+    htmlFor="115390386"
+  >
+    Over here's a Phone Number
+  </label>
+  <Phone
+    calculation=""
+    colspan="1"
+    default=""
+    description=""
+    format="US"
+    hidden="0"
+    hide_label="0"
+    id="115390386"
+    label="Over here's a Phone Number"
+    logic={null}
+    name="over_heres_a_phone_number"
+    options=""
+    phone_format="international"
+    placeholder="International format"
+    readonly="0"
+    required="0"
+    sort="3"
+    text_size={2}
+    type="phone"
+    uniq="0"
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "radio" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__radio"
+  id="fs-fieldset__select_one_thing"
+>
+  <legend
+    className="fs-legend"
+  >
+    Select One Thing
+  </legend>
+  <RadioGroup
+    calculation=""
+    colspan="1"
+    default=""
+    description=""
+    hidden="0"
+    hideLabel={false}
+    hide_label="0"
+    id="115390349"
+    image_dimensions="customDimensions"
+    image_height={100}
+    image_label_alignment="bottom"
+    image_width={100}
+    isRequired={false}
+    label="Select One Thing"
+    lock_image_ratio={true}
+    lock_image_ratio_option="fitProportionally"
+    logic={null}
+    name="select_one_thing"
+    option_layout="vertical"
+    option_other={0}
+    option_show_values={0}
+    option_store="value"
+    options={
+      Array [
+        Object {
+          "label": "Option1",
+          "value": "Option1",
+        },
+        Object {
+          "label": "Option2",
+          "value": "Option2",
+        },
+        Object {
+          "label": "Option3",
+          "value": "Option3",
+        },
+      ]
+    }
+    randomize_options={0}
+    readonly="0"
+    required="0"
+    sort="7"
+    type="radio"
+    uniq="0"
+    use_images={0}
+    value=""
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "section" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__section"
+  id="fs-fieldset__"
+>
+  <Section
+    calculation=""
+    colspan="1"
+    default=""
+    description=""
+    hidden="0"
+    hide_label="0"
+    id="115534602"
+    label=""
+    label_position="default"
+    logic={null}
+    name=""
+    num_columns="4"
+    options=""
+    readonly="0"
+    required="0"
+    section_break={0}
+    section_heading="My header"
+    section_text=""
+    sort="0"
+    text_editor="wysiwyg"
+    type="section"
+    uniq="0"
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "select" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__select"
+  id="fs-fieldset__dropdown_list"
+>
+  <legend
+    className="fs-legend"
+  >
+    Dropdown List
+  </legend>
+  <Select
+    calculation=""
+    colspan="1"
+    default=""
+    description=""
+    hidden="0"
+    hide_label="0"
+    id="115390365"
+    label="Dropdown List"
+    logic={null}
+    name="dropdown_list"
+    option_layout="vertical"
+    option_other={0}
+    option_show_values={0}
+    option_store="value"
+    options={
+      Array [
+        Object {
+          "label": "Option1",
+          "value": "Option1",
+        },
+        Object {
+          "label": "Option2",
+          "value": "Option2",
+        },
+        Object {
+          "label": "Option3",
+          "value": "Option3",
+        },
+      ]
+    }
+    randomize_options={0}
+    readonly="0"
+    required="0"
+    select_size={1}
+    sort="9"
+    type="select"
+    uniq="0"
+    value="Option2"
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "text" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__text"
+  id="fs-fieldset__short_answer"
+>
+  <label
+    className="fs-label"
+    htmlFor="115390410"
+  >
+    Short Answer
+  </label>
+  <Text
+    calculation=""
+    calculation_allow_negatives={0}
+    calculation_operator=""
+    calculation_type=""
+    calculation_units=""
+    colspan="1"
+    confirmationText=""
+    default=""
+    description=""
+    field_one_calculation={0}
+    field_two_calculation={0}
+    hidden="0"
+    hide_input_characters={0}
+    hide_label="0"
+    id="115390410"
+    label="Short Answer"
+    logic={null}
+    maxlength={0}
+    minlength={0}
+    name="short_answer"
+    onChange={null}
+    options=""
+    placeholder=""
+    readonly="0"
+    remove_data_from_emails={0}
+    require_confirmation={0}
+    required="0"
+    restrict_data_access={0}
+    sort="4"
+    text_size={50}
+    type="text"
+    uniq="0"
+    value=""
+    workflow_access="write"
+  />
+</fieldset>
+`;
+
+exports[`Fieldset when field type is "textarea" should match snapshot 1`] = `
+<fieldset
+  className="fs-fieldset fs-fieldset__textarea"
+  id="fs-fieldset__long_answer"
+>
+  <label
+    className="fs-label"
+    htmlFor="115390398"
+  >
+    Long Answer
+  </label>
+  <TextArea
+    calculation=""
+    cols={50}
+    colspan="1"
+    default=""
+    description=""
+    hidden="0"
+    hide_label="0"
+    id="115390398"
+    label="Long Answer"
+    logic={null}
+    maxlength={126}
+    minlength={0}
+    name="long_answer"
+    options=""
+    placeholder=""
+    readonly="0"
+    required="0"
+    rows={10}
+    sort="5"
+    type="textarea"
+    uniq="0"
+    value=""
+    workflow_access="write"
+  />
+</fieldset>
+`;

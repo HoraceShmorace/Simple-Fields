@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup when rendered should match snapshot 1`] = `
+<ul
+  class="fs-radio-group"
+>
+  <li>
+    <input
+      class="fs-radio"
+      id="115390349_1"
+      name="115390349"
+      type="radio"
+      value="Option1"
+    />
+    <label
+      for="115390349_1"
+    >
+      Option1
+    </label>
+  </li>
+  <li>
+    <input
+      class="fs-radio"
+      id="115390349_2"
+      name="115390349"
+      type="radio"
+      value="Option2"
+    />
+    <label
+      for="115390349_2"
+    >
+      Option2
+    </label>
+  </li>
+  <li>
+    <input
+      class="fs-radio"
+      id="115390349_3"
+      name="115390349"
+      type="radio"
+      value="Option3"
+    />
+    <label
+      for="115390349_3"
+    >
+      Option3
+    </label>
+  </li>
+</ul>
+`;

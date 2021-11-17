@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxGroup when rendered should match snapshot 1`] = `
+<ul
+  className="fs-checkbox-group"
+>
+  <li
+    key="Option1"
+  >
+    <Checkbox
+      id="115390353_1"
+      isChecked={false}
+      label="Option1"
+      onClick={[Function]}
+      value="Option1"
+    />
+  </li>
+  <li
+    key="Option2"
+  >
+    <Checkbox
+      id="115390353_2"
+      isChecked={false}
+      label="Option2"
+      onClick={[Function]}
+      value="Option2"
+    />
+  </li>
+  <li
+    key="Option3"
+  >
+    <Checkbox
+      id="115390353_3"
+      isChecked={false}
+      label="Option3"
+      onClick={[Function]}
+      value="Option3"
+    />
+  </li>
+</ul>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Number when rendered should match snapshot 1`] = `
+<Text
+  calculation=""
+  calculation_allow_negatives={0}
+  calculation_category=""
+  calculation_operator=""
+  calculation_type=""
+  calculation_units=""
+  colspan="2"
+  currency=""
+  decimals="0"
+  default=""
+  description=""
+  field_one_calculation={0}
+  field_two_calculation={0}
+  hidden="0"
+  hide_label="0"
+  id="115390402"
+  label="Here's a Number"
+  logic={null}
+  max_value=""
+  maxlength={null}
+  min_value=""
+  name="heres_a_number"
+  onChange={null}
+  options=""
+  pattern={/\\[0-9\\]\\+/}
+  placeholder=""
+  readonly="0"
+  required="0"
+  slider="0"
+  sort="6"
+  text_size={5}
+  type="number"
+  uniq="0"
+  value=""
+  workflow_access="write"
+/>
+`;

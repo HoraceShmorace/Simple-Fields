@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox when rendered as CHECKED should match snapshot 1`] = `
+<Fragment>
+  <input
+    className="fs-checkbox"
+    defaultChecked={false}
+    id="on"
+    name="on"
+    onClick={[MockFunction]}
+    type="checkbox"
+    value="checkbox test"
+  />
+  <label
+    htmlFor="on"
+  >
+    This is checked
+  </label>
+</Fragment>
+`;
+
+exports[`Checkbox when rendered as UNCHECKED should match snapshot 1`] = `
+<Fragment>
+  <input
+    className="fs-checkbox"
+    defaultChecked={false}
+    id="off"
+    name="off"
+    onClick={[MockFunction]}
+    type="checkbox"
+    value="checkbox test"
+  />
+  <label
+    htmlFor="off"
+  >
+    This is not checked
+  </label>
+</Fragment>
+`;

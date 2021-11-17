@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReactFormstack</title>
+  <style>
+    body {
+      background-color: #eeeee8;
+      box-sizing: border-box;
+      font-family: verdana;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+  <script src="./fields.js"></script>
+
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    ReactDOM.render([
+    React.createElement(Fields.Text, {
+        key: 'name',
+        id: 'name-text',
+        label: 'Name',
+        placeholder: 'Tell us your name'
+      }),
+      React.createElement(Fields.TextArea, {
+        key: 'bio',
+        id: 'bio-textarea',
+        label: 'Bio',
+        placeholder: 'And a little about yourself'
+      }),
+      React.createElement(Fields.CheckboxGroup, {
+        key: 'checkbox-group',
+        fields: [
+          {
+            id: "emailme",
+            label: "Email me",
+            type: 'switch',
+            value: "yes",
+            isDefaultChecked: true
+          },
+          {
+            id: "textme",
+            isDefaultChecked: false,
+            label: "Text me",
+            type: 'switch',
+            value: "yes"
+          }
+        ],
+        label: 'Contact Preferences'
+      }),
+      React.createElement(Fields.CheckboxGroup, {
+        key: 'checkbox-group2',
+        fields: [
+          {
+            id: "subscribe",
+            isDefaultChecked: true,
+            label: "Subscribe",
+            value: "yes"
+          }
+        ]
+      }),
+      React.createElement(Fields.RadioGroup, {
+        key: 'radio-group',
+        id: "radio-group",
+        label: "Yes or no? Maybe?",
+        fields: [
+          {
+            label: "Yes",
+            value: "yes"
+          },
+          {
+            label: "No",
+            value: "no"
+          },
+          {
+            label: "Maybe",
+            value: "maybe"
+          }
+        ],
+        value: 'yes'
+      }),
+      React.createElement(Fields.RadioGroup, {
+        key: 'radio-group2',
+        id: "radio-group2",
+        fields: [
+          {
+            label: "Thing 1",
+            value: "thing1"
+          },
+          {
+            label: "Thing 2",
+            value: "thing2"
+          },
+          {
+            label: "Thing 3",
+            value: "thing3"
+          }
+        ],
+        label: "Pick a thing:",
+        type: 'pill',
+        value: 'yes'
+      })
+    ],
+      document.getElementById('root')
+    )
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.root {
+  background-color: #fff;
+  border: 1px solid #eeeee8;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  padding: 1.25rem;
+}
+.root:hover {
+  border: 1px solid #e1e1e1;
+  outline-width: 1px;
+}
+
+.label {
+  border: #000;
+  color: #777;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}

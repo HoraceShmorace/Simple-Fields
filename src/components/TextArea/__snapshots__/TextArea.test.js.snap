@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextArea when rendered should match snapshot 1`] = `
+<textarea
+  aria-required="false"
+  id="115390398"
+  maxlength="126"
+  name="115390398"
+  placeholder=""
+/>
+`;

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select when rendered should match snapshot 1`] = `
+<select
+  aria-required="false"
+  id="115390365"
+  name="115390365"
+>
+  <option
+    value="Option1"
+  >
+    Option1
+  </option>
+  <option
+    value="Option2"
+  >
+    Option2
+  </option>
+  <option
+    value="Option3"
+  >
+    Option3
+  </option>
+</select>
+`;
