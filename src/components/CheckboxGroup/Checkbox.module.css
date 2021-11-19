@@ -1,3 +1,9 @@
+:root {
+  --switch-base-size: 1.3rem;
+  --switch-border-width: 2px;
+  --switch-indicator-size: var(--switch-base-size);
+}
+
 .root {
   align-items: center;
   display: flex;
@@ -5,11 +11,13 @@
   margin-bottom: 1rem;
 }
 
-.label-after label {
+.checkbox.label-after label,
+.switch.label-after label {
   margin-left: 0.75rem;
 }
 
-.label-before label {
+.checkbox.label-before label,
+.switch.label-before label {
   margin-right: 0.75rem;
 }
 
@@ -57,28 +65,57 @@
 }
 
 .switch button {
-  background-color: #bbb;
-  border: 2px solid #ccc;
+  background-color: #ccc;
+  border: var(--switch-border-width) solid #bbb;
   border-radius: 1rem;
   cursor: pointer;
   display: flex;
-  height: 1rem;
+  height: var(--switch-base-size);
   padding: 0;
-  width: calc(2rem + 4px);
+  width: calc((var(--switch-base-size) * 2));
 }
 
 .switch .indicator {
-  background-color: #aaa;
-  border: 3px solid white;
-  border-radius: 1rem;
-  height: 1rem;
-  margin-top: -5px;
-  transform: translateX(-2px);
+  background-color: #999;
+  border: var(--switch-border-width) solid #fff;
+  border-radius: 50%;
+  height: var(--switch-indicator-size);
+  margin: calc(var(--switch-border-width) * -2);
+  transform: translateX(2px);
   transition: all 300ms;
-  width: 1rem;
+  width: var(--switch-indicator-size);
 }
 
 .switch.checked button div.indicator {
   background-color: #11aa11;
-  transform: translateX(calc(1rem - 4px));
+  transform: translateX(calc(var(--switch-indicator-size) - 2px));
 }
+
+.pill {
+  color: #333;
+  cursor: pointer;
+  display: inline-flex;
+  margin: .2rem;
+}
+
+.pill label {
+  display: none;
+}
+
+.pill button {
+  background-color: #ccc;
+  border: 2px solid #eee;
+  border-radius: .4rem;
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: bold;
+  height: 100%;
+  padding: 6px 8px;
+  width: 100%;
+}
+
+.pill.checked button {
+  background-color: #3366bb;
+  color: #eee;
+}
+

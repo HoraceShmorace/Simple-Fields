@@ -22,16 +22,17 @@ const Checkbox = ({ description, id, isDefaultChecked, labelFirst, label, onClic
     <li className={className}>
       <input id={id} type="checkbox" value={value} defaultChecked={isChecked} onClick={toggleClick} />
       {
-        labelFirst && 
+        labelFirst && type !== 'pill' &&
         <label htmlFor={id}>
           {label}
         </label>
       }
       <button onClick={toggleClick}>
-        <div className={styles.indicator} />
+        {type !== 'pill' && <div className={styles.indicator} />}
+        {type === 'pill' && label}
       </button>
       {
-        !labelFirst && 
+        !labelFirst && type !== 'pill' &&
         <label htmlFor={id}>
           {label}
         </label>
@@ -50,7 +51,7 @@ Checkbox.propTypes = {
   type: oneOf([
     'checkbox',
     'switch',
-    'pills'
+    'pill'
   ]),
   value: string
 }

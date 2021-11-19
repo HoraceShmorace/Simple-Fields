@@ -1,7 +1,6 @@
 .root {
   align-items: center;
   flex-direction: row;
-  margin-bottom: 1rem;
 }
 
 .root input[type=radio] {
@@ -11,6 +10,7 @@
 
 .radio {
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .radio label {
@@ -51,39 +51,40 @@
   width: 99%;
 }
 
-.pill {
-  display: inline-flex;
-  background-color: #ccc;
-  border: 2px solid #ddd;
-  border-radius: 1rem;
-  color: #666;
+
+.pillbar {
+  color: #333;
   cursor: pointer;
-  margin: 0 4px;
+  display: inline-flex;
+  margin: 0;
 }
 
-.pill.checked {
-  background-color: #336699;
-  color: #eee;
+.pillbar:first-child button {
+  border-radius: .4rem 0 0 .4rem;
 }
 
-.pill:first-child {
-  margin-left: 0;
+.pillbar:last-child button {
+  border-radius: 0 .4rem .4rem 0;
 }
 
-.pill:last-child {
-  margin-right: 0;
-}
-
-.pill button {
+.pillbar label {
   display: none;
 }
 
-.pill label {
-  border-radius: 1rem;
+.pillbar button {
+  background-color: #ccc;
+  border: 0;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: bold;
   height: 100%;
-  padding: 8px 16px;
+  margin: 0;
+  padding: 6px 13px;
   width: 100%;
 }
+
+.pillbar.checked button {
+  background-color: #3366bb;
+  color: #eee;
+}
+

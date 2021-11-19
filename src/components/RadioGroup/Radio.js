@@ -23,9 +23,10 @@ const Radio = ({ id, index, isDefaultSelected, label, onClick, type, value }) =>
         defaultValue={value}
       />
       <button onClick={handleClick}>
-        <div className={styles.indicator} />
+        {type !== 'pillbar' && <div className={styles.indicator} />}
+        {type === 'pillbar' && label}
       </button>
-      <label htmlFor={uniqueId}>{label}</label>
+      {type !== 'pillbar' && <label htmlFor={uniqueId}>{label}</label>}
     </li>
   )
 }
@@ -38,7 +39,7 @@ Radio.propTypes = {
   onClick: func,
   type: oneOf([
     'radio',
-    'pill'
+    'pillbar'
   ]),
   value: string
 }

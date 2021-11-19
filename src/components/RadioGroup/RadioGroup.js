@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { array, func, oneOf, string } from 'prop-types'
+import cx from 'classnames'
 import Fieldset from '../Fieldset/Fieldset'
 import Radio from './Radio'
 import styles from './RadioGroup.module.css'
@@ -7,7 +8,7 @@ import styles from './RadioGroup.module.css'
 const RadioGroup = ({
   fields,
   id,
-  label,
+  legend,
   onClick,
   type,
   value: defaultValue
@@ -17,7 +18,10 @@ const RadioGroup = ({
     setSelected(value)
     if (typeof onClick === 'function') onClick({ [id]: value })
   }
-
+  const className = cx([
+    styles.root,
+    styles[type]
+  ])
   const RadioButtons = fields.map((props, index) => (
     <Radio
       {...props}
@@ -31,7 +35,7 @@ const RadioGroup = ({
   ))
 
   return (
-    <Fieldset className={styles.root} label={label}>
+    <Fieldset className={className} legend={legend}>
       <ul>
         {RadioButtons}
       </ul>
@@ -42,6 +46,7 @@ const RadioGroup = ({
 RadioGroup.propTypes = {
   fields: array,
   id: string.isRequired,
+  legend: string,
   onClick: func,
   type: oneOf([
     'radio',
@@ -52,6 +57,7 @@ RadioGroup.propTypes = {
 
 RadioGroup.defaultProps = {
   fields: [],
+  legend: null,
   onClick: null,
   type: 'radio',
   value: ''
